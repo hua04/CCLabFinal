@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Helper</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    
+
+    <div class="grid-container">
+        <div class="item1">
+            <div id="result">
+                <p2 id="result-paragraph"> Let's get some work done together!</p2>
+                
+                
+            </div>
+
+
+            
+
+
+        </div>
+        <div class="item2">
+            <div class="timer-display">00:00:00</div>
+            <div id="myDIV" class="header">
+                <h2 style="margin:5px">To Do</h2>
+                <input type="text" id="myInput">
+                <br>
+                <span onclick="newElement()" class="addBtn">Add</span>
+              </div>
+              
+              <ul id="myUL">
+               
+              </ul>
+           
+        </div>
+        <div class="item3">
+            <form id="form">
+                <label for="name">What are you working on right now?</label><br>
+                <input type="text" id="projName" name="projName"><br>
+
+                <label for="prog">How far through are you? </label>
+                <br>
+                <div class="slidecontainer">
+
+                    <input type="range" min="1" max="100" value="50" class="slider" id="prog">
+                </div>
+                <label for="feel">How do you feel about it? </label>
+                <br>
+                <select id="feel" name="feel">
+                    <option value="good">Good, happy with it!</option>
+                    <option value="neutral">Eh, pretty neutral </option>
+                    <option value="bad">Not great</option>
+                    <option value="overwhelming">It feels overwhelming</option>
+                    <option value="lost">I feel lost</option>
+
+
+
+                </select>
+            </form>
+
+            <button id="submit" onclick="clear()">Submit</button><br><br>
+        
+
+        </div>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+
+
+</body>
+</html>
