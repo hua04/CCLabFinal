@@ -22,8 +22,44 @@ var time;
 var timerSec, timerMin, timerHr; 
 
 btn.addEventListener('click', () => {
+  console.log(prog.value);
+  console.log(feel.value);
+  if (prog.value<3) {
+    if (feel.value==="good") {
+        result.innerHTML = startPos[Math.random()*(startPos.length-1)];
+      } 
+      if (feel.value==="neutral") {
+        result.innerHTML = startNeu[Math.random()*(startNeu.length-1)];
+      } 
+      if (feel.value==="bad") {
+        result.innerHTML = startNeg[Math.random()*(startNeg.length-1)];
+      } 
+  } 
 
+  if (prog.value<=7&&prog.value>=3) {
+    if (feel.value==="good") {
+        result.innerHTML = midPos[Math.random()*(midPos.length-1)];
+      } 
+      if (feel.value==="neutral") {
+        result.innerHTML = midNeu[Math.random()*(midNeu.length-1)];
+      } 
+      if (feel.value==="bad") {
+        result.innerHTML = midNeg[Math.random()*(midNeg.length-1)];
+      } 
+  } 
 
+  if (prog.value<8) {
+    if (feel.value==="good") {
+        result.innerHTML = endPos[Math.random()*(endPos.length-1)];
+      } 
+      if (feel.value==="neutral") {
+        result.innerHTML = endNeu[Math.random()*(endNeu.length-1)];
+      } 
+      if (feel.value==="bad") {
+        result.innerHTML = endNeg[Math.random()*(endNeg.length-1)];
+      } 
+  } 
+  
  
 
 })
