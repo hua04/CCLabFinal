@@ -11,12 +11,12 @@
 
 <body>
     
+   
 
     <div class="grid-container">
         <div class="item1">
             <div id="result">
                 <p2 id="result-paragraph"> Let's get some work done together!</p2>
-                
                 
             </div>
 
@@ -26,17 +26,29 @@
 
         </div>
         <div class="item2">
-            <div class="timer-display">00:00:00</div>
+            <div class="timer-display" style="line-height: normal;">
+                <span id="timer-display" style="display:none">00:00:00</span>
+
+                
+                <input id="timer-hour" type="text"placeholder="hr" style="font-size: 24px;"> 
+                <input id="timer-min" type="text"placeholder="min" style="font-size: 24px;"> 
+                <input id="timer-sec" type="text"placeholder="sec" style="font-size: 24px;">
+                <button id="timer-submit" type="submit">Set Timer</button>
+           
+            </div>
             <div id="myDIV" class="header">
                 <h2 style="margin:5px">To Do</h2>
-                <input type="text" id="myInput">
-                <br>
-                <span onclick="newElement()" class="addBtn">Add</span>
+                <input type="text" id="myInput" style="width:60%;">
+          
+                
+                <button id="adBtn" onclick="newElement()" style="padding-top: 15px;padding-bottom: 15px;">Add</button><br>
               </div>
               
-              <ul id="myUL">
+              <ul id="myUL" style="padding-left: 80px;">
                
               </ul>
+              
+              <button id="clearBtn" style="height:40px;" onclick="clearList()">Clear List</button>
            
         </div>
         <div class="item3">
@@ -48,7 +60,7 @@
                 <br>
                 <div class="slidecontainer">
 
-                    <input type="range" min="1" max="100" value="50" class="slider" id="prog">
+                    <input type="range" min="1" max="10" value="5" class="slider" id="prog">
                 </div>
                 <label for="feel">How do you feel about it? </label>
                 <br>
@@ -56,8 +68,7 @@
                     <option value="good">Good, happy with it!</option>
                     <option value="neutral">Eh, pretty neutral </option>
                     <option value="bad">Not great</option>
-                    <option value="overwhelming">It feels overwhelming</option>
-                    <option value="lost">I feel lost</option>
+                  
 
 
 

@@ -1,9 +1,12 @@
+
 body {
     font-size: 14px;
     text-align: center;
     line-height: 2;
     font-family: 'Kalam', cursive;
-    background-color: black;
+    background-image: url("background.jpg");
+    place-items: center;
+     
 }
 
 button {
@@ -29,6 +32,7 @@ h1 {
 p2 {
     font-size: 40px;
     color: black;
+    
 }
 
 img {
@@ -56,14 +60,21 @@ img {
 .item1 {
     grid-area: 1 / 1 / 1 / 1;
     font-size: 20px;
+    
+  
+    
 }
 
 .item2 {
+  
     grid-area: 1 / 2/ 3 / 3;
     font-size: 20px;
 }
 .item3 {
     grid-area: 2 / 1/ 2 / 1;
+   
+   
+    
    
     
 }
@@ -74,19 +85,26 @@ img {
 
 .grid-container {
     display: grid;
+    
     grid-template-areas:
         'info form'
         'info form';
     gap: 10px;
-    background-color: #640060;
+    
     padding: 10px;
+    width: 99vw;
+    height: 96vh;
+    
+    
+    
 }
 
     .grid-container > div {
         background-color: rgba(255, 255, 255, 0.8);
         text-align: center;
-        padding: 20px 0;
+        padding: 20px;
         font-size: 30px;
+        
     }
 
 
@@ -157,8 +175,8 @@ input[type="text"] {
     justify-items: center;
     justify-content: center;
   align-content: center;
-    padding: 12px 8px 12px 40px;
-    background: #eee;
+    
+    background: #e6d1f7;
     font-size: 28px;
     transition: 0.2s;
     width: 70%;
@@ -172,12 +190,12 @@ input[type="text"] {
   
   /* Set all odd list items to a different color (zebra-stripes) */
   ul li:nth-child(odd) {
-    background: #f9f9f9;
+    background: #f2e6fd;
   }
   
   /* Darker background-color on hover */
   ul li:hover {
-    background: #ddd;
+    background: #9778b1;
   }
   
   /* When clicked on, add a background color and strike out text */
@@ -207,16 +225,22 @@ input[type="text"] {
   
   /* Style the "Add" button */
   .addBtn {
-    padding: 10px;
-    width: 25%;
-    background: #d9d9d9;
-    color: #555;
-    float: left;
+   
+    
     text-align: center;
-    font-size: 16px;
-    cursor: pointer;
+
+    background-color: #7124b1;
+    color: white;
+    height: 35px;
+    width: 15%;
+    vertical-align: middle;
+    font-size: 14px;
+    opacity: 0.6;
     transition: 0.3s;
-    border-radius: 0;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px
   }
   
   .addBtn:hover {
@@ -224,9 +248,92 @@ input[type="text"] {
   }
 
   .timer-display {
-    font-size: 2.18em;
+    font-size: 2.2em;
     text-align: center;
    
-    padding: 10px 30px;
+    
+
    
-  }
+}
+.blinktext {
+	-webkit-animation: blink-text 800ms linear infinite;
+	-moz-animation: blink-text 800ms linear infinite;
+	-ms-animation: blink-text 800ms linear infinite;
+	-o-animation: blink-text 800ms linear infinite;
+	 animation: blink-text 1000ms linear infinite;
+}
+
+@-webkit-keyframes blink-text {
+	0% { color: black; opacity: 1; }
+	20% { color: black;opacity: .8; }
+	30% { color: black;opacity: .6; }
+	40% { color: black;opacity: .4; }
+	50% { color: black;opacity: .2; }
+	60% { color: black;opacity: 0; }
+	70% { color: black;opacity: .2; }
+	80% { color: black;opacity: .4; }
+	90% { color: black;opacity: .6; }
+	98% { color: black;opacity: .8; }
+	100% { color: black;opacity: 1; }
+}
+@-moz-keyframes blink-text {
+	0% { color: black; opacity: 1; }
+	20% { color: black;opacity: .8; }
+	30% { color: black;opacity: .6; }
+	40% { color: black;opacity: .4; }
+	50% { color: black;opacity: .2; }
+	60% { color: black;opacity: 0; }
+	70% { color: black;opacity: .2; }
+	80% { color: black;opacity: .4; }
+	90% { color: black;opacity: .6; }
+	98% { color: black;opacity: .8; }
+	100% { color: black;opacity: 1; }
+}
+@-ms-keyframes blink-text {
+	0% { color: black; opacity: 1; }
+	20% { color: black;opacity: .8; }
+	30% { color: black;opacity: .6; }
+	40% { color: black;opacity: .4; }
+	50% { color: black;opacity: .2; }
+	60% { color: black;opacity: 0; }
+	70% { color: black;opacity: .2; }
+	80% { color: black;opacity: .4; }
+	90% { color: black;opacity: .6; }
+	98% { color: black;opacity: .8; }
+	100% { color: black;opacity: 1; }
+}
+@-o-keyframes blink-text {
+	0% { color: black; opacity: 1; }
+	20% { color: black;opacity: .8; }
+	30% { color: black;opacity: .6; }
+	40% { color: black;opacity: .4; }
+	50% { color: black;opacity: .2; }
+	60% { color: black;opacity: 0; }
+	70% { color: black;opacity: .2; }
+	80% { color: black;opacity: .4; }
+	90% { color: black;opacity: .6; }
+	98% { color: black;opacity: .8; }
+	100% { color: black;opacity: 1; }
+}
+@keyframes blink-text {
+	0% { color: black; opacity: 1; }
+	20% { color: black;opacity: .8; }
+	30% { color: black;opacity: .6; }
+	40% { color: black;opacity: .4; }
+	50% { color: black;opacity: .2; }
+	60% { color: black;opacity: 0; }
+	70% { color: black;opacity: .2; }
+	80% { color: black;opacity: .4; }
+	90% { color: black;opacity: .6; }
+	98% { color: black;opacity: .8; }
+	100% { color: black;opacity: 1; }
+}
+
+.timer-display input {
+    display: inline;
+    width: 80px;
+}
+
+#timer-submit {
+    height: 30px;
+}
